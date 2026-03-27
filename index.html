@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Car Showcase</title>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&family=Outfit:wght@300;400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="scene" id="home">
+    <nav aria-label="Primary navigation">
+      <div class="nav-shell">
+        <div class="nav-glow nav-glow-left"></div>
+        <div class="nav-glow nav-glow-right"></div>
+
+        <div class="nav-top-row">
+          <a class="brand brand-home" href="#home" aria-label="Go to homepage">
+            <div class="brand-mark-wrap">
+              <span class="brand-icon"><i class="bi bi-ev-front"></i></span>
+              <span class="brand-text">
+                <span class="brand-mark">Carshow</span>
+                <span class="brand-copy">Concept Performance Lab</span>
+              </span>
+            </div>
+          </a>
+
+          <button class="nav-toggle" type="button" id="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Open navigation menu">
+            <span class="nav-toggle-line"></span>
+            <span class="nav-toggle-line"></span>
+            <span class="nav-toggle-line"></span>
+          </button>
+        </div>
+
+        <div class="nav-menu" id="nav-menu">
+          <div class="nav-links">
+            <a class="nav-link-pill" href="#home">Home</a>
+            <a class="nav-link-pill" href="#specs-section">Specification</a>
+            <a class="nav-link-pill" href="#compare-section">Compare</a>
+            <a class="nav-link-pill" href="#gallery-section">Gallery</a>
+            <a class="nav-link-pill" href="#contact-section">Contact</a>
+          </div>
+
+          <div class="nav-tools">
+            <div class="nav-meta nav-chip" id="nav-meta"><i class="bi bi-mouse me-2"></i>Use wheel, arrows, or swipe</div>
+            <div class="nav-status nav-chip"><span class="nav-status-dot"></span>Online Showcase</div>
+            <button class="sound-toggle" type="button" id="autoplay-toggle" aria-pressed="false"><i class="bi bi-play-circle me-2"></i>Auto Rotate Off</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="bg-track" id="track">
+      <div class="bg" style="background-image:url('https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&w=1600&q=80');"></div>
+      <div class="bg" style="background-image:url('https://images.unsplash.com/photo-1493238792000-8113da705763?auto=format&fit=crop&w=1600&q=80');"></div>
+    </div>
+
+    <main class="main-grid">
+      <section class="content" id="content">
+        <div class="eyebrow">
+          <span class="eyebrow-dot"></span>
+          <span id="eyebrow-text"><i class="bi bi-speedometer2 me-2"></i>Live performance telemetry</span>
+        </div>
+
+        <h1 id="hero-title">
+          <span>Future</span><br>
+          <span class="outline">Drive</span><br>
+          <span class="gradient">X1</span>
+        </h1>
+
+        <p class="subtitle" id="hero-subtitle">Experience next-gen engineering with immersive electric acceleration and precision-built aerodynamics.</p>
+
+        <div class="buttons">
+          <button class="button button-primary" type="button" id="primary-action">Explore Model</button>
+          <button class="button button-secondary" type="button" id="secondary-action">View Specs</button>
+        </div>
+
+        <div class="feature-band" id="feature-band">
+          <div class="feature-chip"><i class="bi bi-stars me-2"></i>Launch Vision</div>
+          <div class="feature-chip"><i class="bi bi-layers me-2"></i>Carbon Aero Shell</div>
+          <div class="feature-chip"><i class="bi bi-cpu me-2"></i>Immersive Cockpit OS</div>
+        </div>
+
+        <div class="meta-strip">
+          <div class="meta-item">
+            <div class="meta-label">Powertrain</div>
+            <div class="meta-value" id="meta-powertrain">Dual Motor EV</div>
+          </div>
+          <div class="meta-item">
+            <div class="meta-label">Launch Control</div>
+            <div class="meta-value" id="meta-launch">3.2s / 100 kmh</div>
+          </div>
+          <div class="meta-item">
+            <div class="meta-label">Intelligence</div>
+            <div class="meta-value" id="meta-intelligence">AI Assist Drive</div>
+          </div>
+        </div>
+      </section>
+
+      <aside class="panel">
+        <div class="panel-kicker"><i class="bi bi-gem me-2"></i>Signature Edition</div>
+        <div class="panel-title" id="panel-title">Aerodynamic Control</div>
+        <p class="panel-description" id="panel-description">A sculpted body profile that balances cooling, downforce, and silent high-speed confidence.</p>
+
+        <div class="spec-list" id="spec-list">
+          <div class="spec-item">
+            <span class="spec-label">0-100</span>
+            <span class="spec-value">3.2s</span>
+          </div>
+          <div class="spec-item">
+            <span class="spec-label">Top Speed</span>
+            <span class="spec-value">320 km/h</span>
+          </div>
+          <div class="spec-item">
+            <span class="spec-label">Range</span>
+            <span class="spec-value">600 km</span>
+          </div>
+        </div>
+
+        <div class="progress" id="progress">
+          <div class="progress-dot active"></div>
+          <div class="progress-dot"></div>
+        </div>
+
+        <div class="control-row">
+          <button class="mini-control" type="button" id="prev-slide" aria-label="Previous slide"><i class="bi bi-chevron-left me-2"></i>Prev</button>
+          <button class="mini-control" type="button" id="next-slide" aria-label="Next slide">Next<i class="bi bi-chevron-right ms-2"></i></button>
+        </div>
+      </aside>
+    </main>
+
+    <section class="dashboard" aria-label="Vehicle overview">
+      <div class="dashboard-card spotlight-card">
+        <div class="dashboard-label"><i class="bi bi-broadcast-pin me-2"></i>Spotlight</div>
+        <div class="dashboard-title" id="spotlight-title">Adaptive torque vectoring</div>
+        <p class="dashboard-copy" id="spotlight-copy">Real-time grip balancing keeps the chassis planted through fast transitions and long straights.</p>
+      </div>
+
+      <div class="dashboard-card stat-card">
+        <div class="dashboard-label"><i class="bi bi-battery-charging me-2"></i>Battery Flow</div>
+        <div class="dashboard-stat" id="battery-stat">92%</div>
+        <div class="dashboard-meter">
+          <span class="dashboard-meter-fill" id="battery-fill"></span>
+        </div>
+      </div>
+
+      <div class="dashboard-card stat-card">
+        <div class="dashboard-label"><i class="bi bi-snow me-2"></i>Cabin Climate</div>
+        <div class="dashboard-stat" id="climate-stat">21 C</div>
+        <div class="dashboard-copy" id="climate-copy">Biometric comfort sync enabled</div>
+      </div>
+    </section>
+
+    <div class="side-rail" id="side-rail" aria-label="Slide navigation">
+      <button class="rail-item active" type="button" data-slide="0">
+        <span class="rail-index">01</span>
+        <span class="rail-name">Future Drive X1</span>
+      </button>
+      <button class="rail-item" type="button" data-slide="1">
+        <span class="rail-index">02</span>
+        <span class="rail-name">Urban Pulse R7</span>
+      </button>
+    </div>
+
+    <div class="ticker">
+      <div class="ticker-track" id="ticker-track">
+        <span>New model launch</span>
+        <span>Electric revolution</span>
+        <span>Performance redefined</span>
+        <span>Autonomous cockpit intelligence</span>
+      </div>
+    </div>
+
+    <div class="corner tl"></div>
+    <div class="corner tr"></div>
+    <div class="corner bl"></div>
+    <div class="corner br"></div>
+  </div>
+
+  <section class="specs-section reveal-on-scroll" id="specs-section">
+    <div class="specs-shell">
+      <div class="specs-header reveal-on-scroll">
+        <p class="section-tag">Full Specifications</p>
+        <h2>Engineering details for every showcased machine</h2>
+        <p class="section-copy">Compare performance, drivetrain, intelligent systems, and comfort technology with a premium overview designed for quick scanning.</p>
+      </div>
+
+      <div class="specs-grid">
+        <article class="specs-card reveal-on-scroll">
+          <div class="specs-card-top">
+            <p class="specs-model">Future Drive X1</p>
+            <span class="specs-badge">Electric Flagship</span>
+          </div>
+          <div class="specs-highlight">3.2s</div>
+          <p class="specs-highlight-copy">0-100 acceleration with dual-motor torque delivery and active aero balancing.</p>
+          <div class="specs-lines">
+            <div class="spec-line"><span>Powertrain</span><strong>Dual Motor EV</strong></div>
+            <div class="spec-line"><span>Top Speed</span><strong>320 km/h</strong></div>
+            <div class="spec-line"><span>Range</span><strong>600 km</strong></div>
+            <div class="spec-line"><span>Battery</span><strong>118 kWh Solid-State</strong></div>
+            <div class="spec-line"><span>Drive Intelligence</span><strong>AI Assist Drive</strong></div>
+            <div class="spec-line"><span>Suspension</span><strong>Adaptive Magnetic Ride</strong></div>
+          </div>
+        </article>
+
+        <article class="specs-card reveal-on-scroll">
+          <div class="specs-card-top">
+            <p class="specs-model">Urban Pulse R7</p>
+            <span class="specs-badge">Hybrid Performance</span>
+          </div>
+          <div class="specs-highlight">780 Nm</div>
+          <p class="specs-highlight-copy">Peak torque output with predictive traction mapping for city and circuit transitions.</p>
+          <div class="specs-lines">
+            <div class="spec-line"><span>Powertrain</span><strong>Hybrid Turbo AWD</strong></div>
+            <div class="spec-line"><span>0-100</span><strong>4.1s</strong></div>
+            <div class="spec-line"><span>Efficiency</span><strong>21 km/l</strong></div>
+            <div class="spec-line"><span>Drive Modes</span><strong>Street / Sport / Track</strong></div>
+            <div class="spec-line"><span>Cabin Tech</span><strong>Luminous Dash Grid</strong></div>
+            <div class="spec-line"><span>Control System</span><strong>Predictive Lane Sense</strong></div>
+          </div>
+        </article>
+      </div>
+
+      <div class="compare-panel reveal-on-scroll" id="compare-section">
+        <div class="compare-heading">
+          <p class="section-tag">Quick Compare</p>
+          <h3>Luxury, acceleration, and intelligence side by side</h3>
+        </div>
+
+        <div class="compare-table">
+          <div class="compare-row compare-head">
+            <span>Category</span>
+            <span>Future Drive X1</span>
+            <span>Urban Pulse R7</span>
+          </div>
+          <div class="compare-row">
+            <span>Acceleration</span>
+            <span>3.2s</span>
+            <span>4.1s</span>
+          </div>
+          <div class="compare-row">
+            <span>Power Source</span>
+            <span>Electric</span>
+            <span>Hybrid Turbo</span>
+          </div>
+          <div class="compare-row">
+            <span>Top Capability</span>
+            <span>320 km/h</span>
+            <span>780 Nm Torque</span>
+          </div>
+          <div class="compare-row">
+            <span>Drive Focus</span>
+            <span>Silent High-Speed Stability</span>
+            <span>Fast Urban Response</span>
+          </div>
+          <div class="compare-row">
+            <span>Signature Tech</span>
+            <span>AI Assist Drive</span>
+            <span>Predictive Lane Sense</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="gallery-section reveal-on-scroll" id="gallery-section">
+    <div class="specs-shell">
+      <div class="gallery-header reveal-on-scroll">
+        <p class="section-tag">Gallery</p>
+        <h2>Visual frames from the concept collection</h2>
+        <p class="section-copy">A cinematic look at exterior lines, cockpit materials, and engineered details from each performance machine.</p>
+      </div>
+
+      <div class="gallery-grid">
+        <article class="gallery-card gallery-wide reveal-on-scroll">
+          <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=80" alt="Sports car front profile">
+          <div class="gallery-overlay">
+            <p class="gallery-kicker">Exterior Form</p>
+            <h3>Low, sculpted, and aerodynamically tuned</h3>
+          </div>
+        </article>
+
+        <article class="gallery-card reveal-on-scroll">
+          <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=900&q=80" alt="Luxury car side lighting">
+          <div class="gallery-overlay">
+            <p class="gallery-kicker">Night Presence</p>
+            <h3>Signature light architecture</h3>
+          </div>
+        </article>
+
+        <article class="gallery-card reveal-on-scroll">
+          <img src="https://images.unsplash.com/photo-1489824904134-891ab64532f1?auto=format&fit=crop&w=900&q=80" alt="Car interior dashboard">
+          <div class="gallery-overlay">
+            <p class="gallery-kicker">Cockpit</p>
+            <h3>Driver-focused digital cabin</h3>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-section reveal-on-scroll" id="contact-section">
+    <div class="specs-shell">
+      <div class="contact-grid">
+        <div class="contact-copy reveal-on-scroll">
+          <p class="section-tag">Contact</p>
+          <h2>Book a private concept walkthrough</h2>
+          <p class="section-copy">Connect with the showcase team for product details, design notes, and premium viewing access for the latest collection.</p>
+
+          <div class="contact-points">
+            <div class="contact-point">
+              <i class="bi bi-geo-alt"></i>
+              <div>
+                <strong>Design Studio</strong>
+                <span>Future Mobility Avenue, Kolkata</span>
+              </div>
+            </div>
+            <div class="contact-point">
+              <i class="bi bi-envelope"></i>
+              <div>
+                <strong>Email</strong>
+                <span>hello@carshowconcept.com</span>
+              </div>
+            </div>
+            <div class="contact-point">
+              <i class="bi bi-telephone"></i>
+              <div>
+                <strong>Call</strong>
+                <span>+91 98765 43210</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-card reveal-on-scroll">
+          <div class="contact-card-head">
+            <p class="section-tag">Request Access</p>
+            <h3>Leave your details</h3>
+          </div>
+
+          <div class="contact-form-grid">
+            <div class="contact-field">
+              <label for="name">Name</label>
+              <input id="name" type="text" placeholder="Your name">
+            </div>
+            <div class="contact-field">
+              <label for="email">Email</label>
+              <input id="email" type="email" placeholder="name@example.com">
+            </div>
+            <div class="contact-field contact-field-wide">
+              <label for="interest">Interest</label>
+              <select id="interest">
+                <option>Future Drive X1</option>
+                <option>Urban Pulse R7</option>
+                <option>Both Models</option>
+              </select>
+            </div>
+            <div class="contact-field contact-field-wide">
+              <label for="message">Message</label>
+              <textarea id="message" rows="4" placeholder="Tell us what you'd like to explore."></textarea>
+            </div>
+          </div>
+
+          <button class="button button-primary contact-submit" type="button">
+            <i class="bi bi-send me-2"></i>Send Request
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
